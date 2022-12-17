@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  font-family: "Inter", "sans-serif";
+}
+.nav-list a,
+.menu a {
+  @apply text-base hover:text-primary-100 font-normal;
+}
+.menu {
+  background: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 33%, hsl(36, 100%, 99%) 33%);
+  padding-left: 50%;
+}
+
+.btn {
+  @apply px-4 py-2  text-sm  inline-block bg-primary-100 hover:bg-neutral-300 w-max  uppercase text-neutral-50 font-bold hover:-translate-y-0.5 transition-colors duration-500;
+}
+.xx1 {
+  @apply border border-purple-600;
+}
+.xx2 {
+  @apply border-2 border-pink-900;
+}
+/* hamburger */
+.hamburger {
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 2.5px;
+  width: 100%;
+  transform: rotate(0);
+  transition: all 0.5s;
+  background-color: black;
+}
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+.active {
+  transform: rotate(90deg);
+}
+.active .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+.active .hamburger-middle {
+  display: none;
+}
+.active .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+.card-wrapper{
+  display:grid;
+  gap:10px;
+}
+.card{
+  display:grid;
+  grid-template-columns:7rem 1fr;
+  align-items:center;
+  gap:10px;
+}
+@media (min-width: 768px) {
+  .main-wrapper {
+    grid-template-areas:
+      "hero hero news"
+      "heading para news";
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows:300px auto;
+  }
+  .hero {
+    grid-area: hero;
+    height: 300px;
+    overflow:hidden;
+  }
+  .hero img {
+    object-fit: cover;
+  }
+  .news {
+    grid-area: news;
+  }
+  .heading {
+    grid-area: heading;
+  }
+  .para {
+    grid-area: para;
+  }
+  .card-wrapper {
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  }
+  .card{
+    grid-gap:5px;
+  }
+  .card-content{
+    justify-self:start;
+    align-self:stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+  }
+}
