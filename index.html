@@ -37,13 +37,17 @@
     <!-- header section -->
     <header class="bg-neutral-50">
       <!-- header container -->
-      <div class="container px-6 py-12 mx-auto">
+      <div
+        class="container px-6 py-12 mx-auto lg:pt-[91px] lg:pl-[164px] lg:pr-[164px]"
+      >
         <!-- menu/nav bar -->
         <nav class="flex items-center justify-between">
           <!-- logo -->
           <img src="assets/images/logo.svg" alt="logo icon" />
           <!-- menu -->
-          <ul class="items-center hidden space-x-8 md:flex nav-list">
+          <ul
+            class="items-center hidden gap-x-8 md:flex nav-list lg:gap-x-[38px]"
+          >
             <li><a href="#">Home</a></li>
             <li><a href="#">New</a></li>
             <li><a href="#">Popular</a></li>
@@ -78,7 +82,9 @@
     <!-- main section -->
     <main>
       <!-- main container -->
-      <div class="container grid gap-6 px-6 mx-auto main-wrapper">
+      <div
+        class="container grid gap-6 px-6 mx-auto lg:px-[164px] main-wrapper lg:mt-1.5 lg:gap-x-[30px] lg:gap-y-8"
+      >
         <!-- hero image -->
         <div class="hero">
           <picture>
@@ -88,20 +94,23 @@
             />
             <img
               src="assets/images/image-web-3-mobile.jpg"
+              class="lg:w-full"
               alt=" web 3 image"
             />
           </picture>
         </div>
 
         <!-- heading -->
-        <h1 class="text-5xl font-bold md:max-w-xs text-neutral-300 heading">
+        <h1
+          class="text-6xl tracking-tight font-bold md:max-w-xs text-neutral-300 heading"
+        >
           The Bright Future of Web 3.0?
         </h1>
         <!-- para -->
         <div
-          class="flex flex-col space-y-4 md:space-y-0 md:justify-between para md:max-w-xs"
+          class="flex flex-col space-y-4 md:space-y-0 md:justify-between para"
         >
-          <p class="max-w-sm text-base font-normal text-neutral-200">
+          <p class="max-w-sm font-normal text-neutral-200">
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
@@ -109,37 +118,47 @@
           <button type="button" class="btn">Read More</button>
         </div>
         <!-- news section -->
-        <div class="max-w-xs p-4 md:py-8 bg-neutral-300 news h-max">
-          <h2 class="text-2xl font-bold md:text-4xl text-primary-50 md:mb-6">
+        <div
+          class="max-w-xs p-4 md:py-8 bg-neutral-300 news h-max lg:max-w-[22rem] lg:px-[26px]"
+        >
+          <h2
+            class="text-2xl font-bold md:text-4xl tracking-wider text-primary-50 md:mb-6 lg:mb-[30px]"
+          >
             New
           </h2>
           <h3
-            class="mb-2 text-lg font-bold text-neutral-50 hover:text-primary-50"
+            class="mb-2 text-xl font-bold text-neutral-50 hover:text-primary-50"
           >
             Hydrogen VS Electric Cars
           </h3>
-          <p class="text-sm md:text-base text-neutral-100">
+          <p class="text-sm md:text-base text-neutral-100 tracking-tight">
             Will hydrogen-fueled cars ever catch up to EVs?
           </p>
-          <div class="h-0.5 my-6 bg-neutral-100"></div>
+          <div
+            class="h-0.5 my-6 lg:my-[30px] bg-neutral-100"
+            role="separator"
+          ></div>
 
           <h3
-            class="mt-5 mb-2 text-lg font-bold text-neutral-50 hover:text-primary-50"
+            class="mt-5 mb-2 text-xl font-bold text-neutral-50 hover:text-primary-50"
           >
             The Downsides of AI Artistry
           </h3>
-          <p class="text-sm md:text-base text-neutral-100">
+          <p class="text-sm md:text-base text-neutral-100 tracking-tight">
             What are the possible adverse effects of on-demand AI image
             generation?
           </p>
-          <div class="h-0.5 my-6 bg-neutral-100"></div>
+          <div
+            class="h-0.5 my-6 bg-neutral-100 lg:my-[30px]"
+            role="separator"
+          ></div>
 
           <h3
-            class="mt-5 mb-2 text-lg font-bold text-neutral-50 hover:text-primary-50"
+            class="mt-5 mb-2 text-xl font-bold text-neutral-50 hover:text-primary-50"
           >
             Is VC Funding Drying Up?
           </h3>
-          <p class="text-sm md:text-base text-neutral-100">
+          <p class="text-sm md:text-base tracking-tight text-neutral-100">
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
           </p>
@@ -149,20 +168,18 @@
     <!-- about section -->
     <section id="about">
       <!-- section container -->
-      <div class="container px-6 py-12 mx-auto card-wrapper">
+      <div
+        class="container px-6 py-12 mx-auto lg:mt-6 lg:px-[164px] card-wrapper"
+      >
         <!-- card 1 -->
         <div class="card">
-          <img
-            src="assets/images/image-retro-pcs.jpg"
-            class="w-36 md:w-28"
-            alt="retro pcs image"
-          />
+          <img src="assets/images/image-retro-pcs.jpg" alt="retro pcs image" />
           <div class="card-content">
-            <h1 class="text-xl font-bold text-neutral-200">01</h1>
-            <h2 class="text-base font-bold text-neutral-300">
+            <h1 class="card-title">01</h1>
+            <h2 class="text-lg font-bold text-neutral-300">
               Reviving Retro PCs
             </h2>
-            <p class="text-xs text-neutral-200">
+            <p class="text-base text-neutral-200 mt-2">
               What happens when old PCs are given modern upgrades?
             </p>
           </div>
@@ -171,15 +188,14 @@
         <div class="card">
           <img
             src="assets/images/image-top-laptops.jpg"
-            class="w-36 md:w-28"
             alt="retro pcs image"
           />
           <div class="card-content">
-            <h1 class="text-xl font-bold text-neutral-200">02</h1>
-            <h2 class="text-base font-bold text-neutral-300">
+            <h1 class="card-title">02</h1>
+            <h2 class="text-lg font-bold text-neutral-300">
               Top 10 Laptops of 2022
             </h2>
-            <p class="text-xs text-neutral-200">
+            <p class="text-base text-neutral-200 mt-2">
               Our best picks for various needs and budgets.
             </p>
           </div>
@@ -188,15 +204,14 @@
         <div class="card">
           <img
             src="assets/images/image-gaming-growth.jpg"
-            class="w-36 md:w-28"
             alt="growth of gaming image"
           />
           <div class="card-content">
-            <h1 class="text-xl font-bold text-neutral-200">03</h1>
-            <h2 class="text-base font-bold text-neutral-300">
+            <h1 class="card-title">03</h1>
+            <h2 class="text-lg font-bold text-neutral-300">
               The Growth of Gaming
             </h2>
-            <p class="text-xs text-neutral-200">
+            <p class="text-base text-neutral-200 mt-2">
               How the pandemic has sparked fresh opportunities.
             </p>
           </div>
@@ -207,7 +222,10 @@
     <footer class="attribution">
       <div class="container px-6 py-12 mx-auto text-sm md:text-xl">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener"
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener"
           >Frontend Mentor</a
         >. Coded by <a href="#">Pranshu Sahu</a>.
       </div>
